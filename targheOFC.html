@@ -1,0 +1,45 @@
+<html>
+    
+<head>
+    <title>Generatore di targhe by notchez</title>
+    <link href="stileTarghe.css" rel="stylesheet">
+</head>
+  
+    <body>
+    <h1 class="Titolo">Generatore di targhe fatto da notchez</table></h1>
+    <h5 class="inspired">ispirato da sunkistan</h5>
+    </body>
+   
+    <script>
+     var LettereA = ["A", "B", "C", "D", "E", "F", "G"]
+     var LettereB = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z"]
+     var LettereC = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z"]
+     var LettereD = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z"]
+     var numeriA = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+     var numeriB = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+     var numeriC = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+     //aggiungere math.floor e fare uno style 
+     
+     var casualeLA = Math.floor(Math.random() * LettereA.length)
+     var casualeLB = Math.floor(Math.random() * LettereB.length)
+     var casualeLC = Math.floor(Math.random() * LettereC.length)
+     var casualeLD = Math.floor(Math.random() * LettereD.length)
+     var casualeNA = Math.floor(Math.random() * numeriA.length)
+     var casualeNB = Math.floor(Math.random() * numeriB.length)
+     var casualeNC = Math.floor(Math.random() * numeriC.length)
+       
+     document.write("la tua targa" + " "  + LettereA[casualeLA] + LettereB[casualeLB] + numeriA[casualeNA] + numeriB[casualeNB] + numeriC[casualeNC] + LettereC[casualeLC] + LettereD[casualeLD])
+    </script>
+   
+  
+   <INPUT class="button" TYPE="button" VALUE="genera una nuova targa" ONCLICK="history.go(0)">
+
+    <body>
+        <div id="github">
+        <a href="https://github.com/NotChezCasualDev">my github
+        </div>
+    </body>
+
+
+
+</html>
